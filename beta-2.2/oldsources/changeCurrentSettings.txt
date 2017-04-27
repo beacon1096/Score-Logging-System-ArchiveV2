@@ -1,0 +1,89 @@
+void changeCurrentSettingsOLD() {
+	fclose(stdin);
+	switch(settings.lang) {
+		case 0: {
+			freopen("lang/en_us/acquiringClass.lang","r",stdin);
+			break;
+		}
+		case 1: {
+			freopen("lang/zh_cn/acquiringClass.lang","r",stdin);
+			break;
+		}
+		default: {
+			freopen("lang/zh_cn/acquiringClass.lang","r",stdin);
+			break;
+		}
+	}
+	while(1) {
+		fgets(cuProLine,CUPROLINEMAX,stdin);
+		if(cuProLine[0]=='&')
+			break;
+		printf("%s",cuProLine);
+	}
+	fclose(stdin);
+	freopen("CON","r",stdin);
+	scanf("%d",&cuClass.num);
+	fclose(stdin);
+	switch(settings.lang) {
+		case 0: {
+			freopen("lang/en_us/acquiringType.lang","r",stdin);
+			break;
+		}
+		case 1: {
+			freopen("lang/zh_cn/acquiringType.lang","r",stdin);
+			break;
+		}
+		default: {
+			freopen("lang/zh_cn/acquiringType.lang","r",stdin);
+			break;
+		}
+	}
+	while(1) {
+		fgets(cuProLine,CUPROLINEMAX,stdin);
+		if(cuProLine[0]=='&')
+			break;
+		printf("%s",cuProLine);
+	}
+	fclose(stdin);
+	freopen("CON","r",stdin);
+	char res;
+reSelTypeBegin:
+	res=getche();
+	printf("\n");
+	switch(res) {
+		case '0': {
+			settings.cuT=0;
+			break;
+		}
+		case '1': {
+			settings.cuT=1;
+			break;
+		}
+		default: {
+			switch(settings.lang) {
+				case 0: {
+					freopen("lang/en_us/illegalInput.lang","r",stdin);
+					break;
+				}
+				case 1: {
+					freopen("lang/zh_cn/illegalInput.lang","r",stdin);
+					break;
+				}
+				default: {
+					freopen("lang/zh_cn/illegalInput.lang","r",stdin);
+					break;
+				}
+			}
+			while(1) {
+				fgets(cuProLine,CUPROLINEMAX,stdin);
+				if(cuProLine[0]=='&')
+					break;
+				printf("%s",cuProLine);
+			}
+			fclose(stdin);
+			freopen("CON","r",stdin);
+			goto reSelTypeBegin;
+			break;
+		}
+	}
+}
