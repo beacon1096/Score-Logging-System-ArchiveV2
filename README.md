@@ -1,9 +1,7 @@
-# SScore-Logging-System
+# Score-Logging-System
 
-=============================================
-SORRY FOR WAITING
-DUE TO 2FA ISSUES I LOST MY ACCOUNT
-UPDATE WILL BE COMING SOON
+Cyan Update (aka beta2.2) released.
+Denim Update is coming this Summer.
 =============================================
 Biege Update beta2.1 released.
 Cyan Update Coming Soon.
@@ -25,7 +23,6 @@ Future Planning:
 Ancient Chinese Reading+Modern Chinese Reading+
 Comprehensive learning+Composition for Chinese exams,.etc)
 3.Modular functions!(easier to maintain)
-
 ---------------------------------------------
 α1.0 Released!
 sry for a long time waiting!
