@@ -1,15 +1,12 @@
 # Score-Logging-System
-
+Abandoned, go look for TAT
+==========================
 Cyan Update (aka beta2.2) released.
 Denim Update is coming this Summer.
-=============================================
 Biege Update beta2.1 released.
 Cyan Update Coming Soon.
----------------------------------------------
 AMBER UPDATE(beta2.0)released
----------------------------------------------
 for future planning, goto issues.
----------------------------------------------
 AMBER UPDATE IS COMING SOON
 
 UPDATE-Sep.6
@@ -22,7 +19,5 @@ Future Planning:
 10Selection+Poems+
 Ancient Chinese Reading+Modern Chinese Reading+
 Comprehensive learning+Composition for Chinese exams,.etc)
-3.Modular functions!(easier to maintain)
----------------------------------------------
 α1.0 Released!
 sry for a long time waiting!
